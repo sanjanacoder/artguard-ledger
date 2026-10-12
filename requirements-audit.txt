@@ -1,0 +1,5 @@
+# Offline only: generating style-audit images. Not needed by the app.
+-r requirements.txt
+diffusers>=0.30
+transformers>=4.44
+accelerate>=0.33

@@ -1,0 +1,19 @@
+{
+  "name": "ArtGuard demo index",
+  "size": 2917,
+  "built_at": "2026-10-11T01:05:31+00:00",
+  "model": "ViT-B-32 (laion2b_s34b_b79k)",
+  "sources": [
+    {
+      "name": "Art Institute of Chicago Open Access (public domain, CC0)",
+      "count": 2914,
+      "url": "https://api.artic.edu/docs/"
+    },
+    {
+      "name": "Simulated scraped copies of demo pieces",
+      "count": 3,
+      "url": null
+    }
+  ],
+  "description": "A small sample index for demonstration. It is not a real AI training dataset."
+}

@@ -1,0 +1,45 @@
+{
+  "_note": "Outside tools the app links to. Re-check every URL before the demo and update last_checked.",
+  "resources": [
+    {
+      "key": "haveibeentrained",
+      "name": "Have I Been Trained (Spawning)",
+      "url": "https://haveibeentrained.com",
+      "kind": "dataset search",
+      "what_it_does": "Search public training datasets for your images and mark them as opted out.",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "key": "spawning",
+      "name": "Spawning: Do Not Train registry",
+      "url": "https://spawning.ai",
+      "kind": "opt-out registry",
+      "what_it_does": "Register works you don't want used for AI training. Only AI developers who choose to check the registry are affected.",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "key": "glaze",
+      "name": "Glaze (University of Chicago)",
+      "url": "https://glaze.cs.uchicago.edu",
+      "kind": "style protection",
+      "what_it_does": "Adds changes to your image meant to disrupt style mimicry by AI models. Runs on your own computer.",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "key": "nightshade",
+      "name": "Nightshade (University of Chicago)",
+      "url": "https://nightshade.cs.uchicago.edu",
+      "kind": "style protection",
+      "what_it_does": "Alters images so that models trained on them without consent learn distorted features.",
+      "last_checked": "2026-10-10"
+    },
+    {
+      "key": "darkvisitors",
+      "name": "Dark Visitors (AI crawler list)",
+      "url": "https://darkvisitors.com",
+      "kind": "robots.txt",
+      "what_it_does": "Lists known AI crawlers and generates robots.txt rules to block them on your own website.",
+      "last_checked": "2026-10-10"
+    }
+  ]
+}

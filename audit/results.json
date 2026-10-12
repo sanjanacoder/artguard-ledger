@@ -1,0 +1,99 @@
+{
+ "artist": "Katsushika Hokusai",
+ "built_at": "2026-10-11T02:01:16+00:00",
+ "clip_model": "ViT-B-32 (laion2b_s34b_b79k)",
+ "reference_count": 79,
+ "reference_source": "Art Institute of Chicago Open Access (public domain, CC0)",
+ "templates": {
+  "styled": "{subject}, in the style of {artist}",
+  "generic": "{subject}, painting",
+  "genre": "{subject}, Japanese woodblock print"
+ },
+ "subjects": [
+  "a harbor at dawn",
+  "a cat on a windowsill",
+  "mountains under snow",
+  "a crowded city street",
+  "a bowl of fruit",
+  "a lighthouse in a storm",
+  "a person reading a book",
+  "a bridge over a river"
+ ],
+ "seeds": [
+  11,
+  22,
+  33,
+  44
+ ],
+ "near_copy_threshold": 0.9,
+ "models": [
+  {
+   "model": "Stable Diffusion 1.5 (2022)",
+   "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+   "steps": 25,
+   "guidance": 7.5,
+   "skipped_images": 0,
+   "n_styled": 32,
+   "mean_similarity": {
+    "styled": 0.7521006818860769,
+    "generic": 0.4193389564752579,
+    "genre": 0.7395322453230619
+   },
+   "lift": 0.33276172541081905,
+   "ci_low": 0.3125183164840564,
+   "ci_high": 0.35052675732877103,
+   "genre_lift": 0.012568436563014984,
+   "genre_ci_low": -0.005550310527905822,
+   "genre_ci_high": 0.035617606015875936,
+   "near_copy_rate": 0.0,
+   "max_similarity_to_a_reference": 0.881931722164154
+  },
+  {
+   "model": "SD-Turbo (2023, distilled from SD 2.1)",
+   "model_id": "stabilityai/sd-turbo",
+   "steps": 2,
+   "guidance": 0.0,
+   "skipped_images": 0,
+   "n_styled": 32,
+   "mean_similarity": {
+    "styled": 0.5700109843164682,
+    "generic": 0.4003122625872493,
+    "genre": 0.6901265690103173
+   },
+   "lift": 0.16969872172921896,
+   "ci_low": 0.1226080612745136,
+   "ci_high": 0.2197273358236998,
+   "genre_lift": -0.12011558469384909,
+   "genre_ci_low": -0.1515021720668301,
+   "genre_ci_high": -0.08425374606158587,
+   "near_copy_rate": 0.0,
+   "max_similarity_to_a_reference": 0.8244279026985168
+  }
+ ],
+ "grid": {
+  "subject": "a harbor at dawn",
+  "rows": [
+   {
+    "model": "Stable Diffusion 1.5 (2022)",
+    "styled": "thumbs/stable-diffusion-v1-5__stable-diffusion-v1-5_styled_0_11.jpg",
+    "generic": "thumbs/stable-diffusion-v1-5__stable-diffusion-v1-5_generic_0_11.jpg",
+    "genre": "thumbs/stable-diffusion-v1-5__stable-diffusion-v1-5_genre_0_11.jpg"
+   },
+   {
+    "model": "SD-Turbo (2023, distilled from SD 2.1)",
+    "styled": "thumbs/stabilityai__sd-turbo_styled_0_11.jpg",
+    "generic": "thumbs/stabilityai__sd-turbo_generic_0_11.jpg",
+    "genre": "thumbs/stabilityai__sd-turbo_genre_0_11.jpg"
+   }
+  ]
+ },
+ "reference_thumbs": [
+  "thumbs/ref_aic_100625.jpg",
+  "thumbs/ref_aic_100626.jpg",
+  "thumbs/ref_aic_100627.jpg",
+  "thumbs/ref_aic_10914.jpg",
+  "thumbs/ref_aic_110779.jpg",
+  "thumbs/ref_aic_13255.jpg"
+ ],
+ "caption": "Style lift is how much closer outputs move to the artist's reference works when the prompt names the artist. A drop across versions may indicate an opt-out was honored, or may reflect other training changes. This is a signal, not proof."
+}

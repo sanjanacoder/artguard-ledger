@@ -1,0 +1,34 @@
+# Style-lift audit setup. A real user would audit their OWN name only; the demo
+# audits a public-domain historical artist as a known positive case.
+artist: "Katsushika Hokusai"
+reference_query: "Hokusai"  # Art Institute of Chicago search, public-domain works only
+
+subjects:
+  - "a harbor at dawn"
+  - "a cat on a windowsill"
+  - "mountains under snow"
+  - "a crowded city street"
+  - "a bowl of fruit"
+  - "a lighthouse in a storm"
+  - "a person reading a book"
+  - "a bridge over a river"
+
+templates:
+  styled: "{subject}, in the style of {artist}"
+  # Control 1: generic, no artist and no genre.
+  generic: "{subject}, painting"
+  # Control 2: same genre as the artist, without the name. Lift over this
+  # control is what naming the artist adds beyond the genre.
+  genre: "{subject}, Japanese woodblock print"
+
+seeds: [11, 22, 33, 44]
+
+models:
+  - id: "stable-diffusion-v1-5/stable-diffusion-v1-5"
+    label: "Stable Diffusion 1.5 (2022)"
+    steps: 25
+    guidance: 7.5
+  - id: "stabilityai/sd-turbo"
+    label: "SD-Turbo (2023, distilled from SD 2.1)"
+    steps: 2
+    guidance: 0.0

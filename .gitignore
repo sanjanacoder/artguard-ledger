@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# Raw downloads and full-size generations stay local; the app uses the
+# committed embeddings, thumbnails and results.json.
+index/raw/
+audit/outputs/
+*.egg-info/
+# Full-size reference works; sources.json and the thumbnails are committed.
+audit/reference/*.jpg

@@ -1,0 +1,122 @@
+{
+ "piece": "tide_circles.jpg",
+ "rows": [
+  {
+   "variant": "Original",
+   "similarity": 1.0
+  },
+  {
+   "variant": "Resize 50%",
+   "similarity": 0.9999
+  },
+  {
+   "variant": "Resize 25%",
+   "similarity": 0.9933
+  },
+  {
+   "variant": "JPEG q90",
+   "similarity": 0.9996
+  },
+  {
+   "variant": "JPEG q60",
+   "similarity": 0.9846
+  },
+  {
+   "variant": "JPEG q30",
+   "similarity": 0.9756
+  },
+  {
+   "variant": "Crop 10%",
+   "similarity": 0.9862
+  },
+  {
+   "variant": "Crop 25%",
+   "similarity": 0.9815
+  },
+  {
+   "variant": "Crop 40%",
+   "similarity": 0.9744
+  },
+  {
+   "variant": "Hue shift",
+   "similarity": 0.9553
+  },
+  {
+   "variant": "Grayscale",
+   "similarity": 0.8479
+  },
+  {
+   "variant": "Mirror",
+   "similarity": 0.9927
+  },
+  {
+   "variant": "Screenshot border",
+   "similarity": 0.916
+  },
+  {
+   "variant": "Crop 25% + resize 50% + JPEG q60",
+   "similarity": 0.9134
+  },
+  {
+   "variant": "Nearest unrelated image in index",
+   "similarity": 0.6315
+  }
+ ],
+ "t_strong": 0.96,
+ "t_possible": 0.9,
+ "variant_summary": {
+  "Resize 50%": {
+   "min": 0.9725,
+   "mean": 0.9969
+  },
+  "Resize 25%": {
+   "min": 0.9038,
+   "mean": 0.9536
+  },
+  "JPEG q90": {
+   "min": 0.9551,
+   "mean": 0.9911
+  },
+  "JPEG q60": {
+   "min": 0.9121,
+   "mean": 0.9554
+  },
+  "JPEG q30": {
+   "min": 0.8278,
+   "mean": 0.9378
+  },
+  "Crop 10%": {
+   "min": 0.9188,
+   "mean": 0.9673
+  },
+  "Crop 25%": {
+   "min": 0.8162,
+   "mean": 0.9341
+  },
+  "Crop 40%": {
+   "min": 0.6678,
+   "mean": 0.8659
+  },
+  "Hue shift": {
+   "min": 0.839,
+   "mean": 0.9188
+  },
+  "Grayscale": {
+   "min": 0.769,
+   "mean": 0.863
+  },
+  "Mirror": {
+   "min": 0.9607,
+   "mean": 0.9886
+  },
+  "Screenshot border": {
+   "min": 0.8721,
+   "mean": 0.9352
+  },
+  "Crop 25% + resize 50% + JPEG q60": {
+   "min": 0.6841,
+   "mean": 0.8456
+  }
+ },
+ "n_positive_images": 45
+}
